@@ -1,0 +1,15 @@
+export const features = {
+  isFeature1Enabled: true,
+  isFeature2Enabled: false,
+  a1: false,
+  a2: false,
+  a3: false,
+  a4: false,
+  a5: false,
+  a6: false,
+  a7: false,
+  a8: false,
+  a9: false,
+  a10: false,
+  a11: false,
+};
