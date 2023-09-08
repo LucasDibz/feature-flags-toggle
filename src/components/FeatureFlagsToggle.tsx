@@ -16,7 +16,10 @@ export function FeatureFlagsToggle() {
 
       <div className='max-h-96 my-3 overflow-y-auto flex flex-col gap-3 border-t border-gray-200'>
         {Object.entries(features).map(([feature, value]) => (
-          <div key={feature} className='flex gap-3 items-center mx-8'>
+          <div
+            key={feature}
+            className='flex gap-3 items-center justify-between mx-8'
+          >
             <label htmlFor={feature} className='hover:cursor-pointer'>
               {feature}
             </label>

@@ -12,7 +12,7 @@ import Faq from './components/faq';
 
 const Home = () => {
   return (
-    <>
+    <div className='bg-slate-300'>
       <Navbar />
       <Hero />
       <SectionTitle
@@ -49,7 +49,7 @@ const Home = () => {
       <Faq />
       <Cta />
       <Footer />
-    </>
+    </div>
   );
 };
 

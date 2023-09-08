@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <FeatureFlagsProvider>
       <App />
-      <FeatureFlagsToggle />
+      {import.meta.env.DEV && <FeatureFlagsToggle />}
     </FeatureFlagsProvider>
   </React.StrictMode>,
 );

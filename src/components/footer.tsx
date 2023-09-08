@@ -14,13 +14,6 @@ export default function Footer() {
                 href='/'
                 className='flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100'
               >
-                <img
-                  src='/img/logo.svg'
-                  alt='N'
-                  width='32'
-                  height='32'
-                  className='w-8'
-                />
                 <span>Nextly</span>
               </a>
             </div>
@@ -29,22 +22,6 @@ export default function Footer() {
               Nextly is a free landing page & marketing website template for
               startups and indie projects. Its built with Next.js & TailwindCSS.
               And its completely open-source.
-            </div>
-
-            <div className='mt-5'>
-              <a
-                href='https://vercel.com/?utm_source=web3templates&utm_campaign=oss'
-                target='_blank'
-                rel='noopener'
-                className='relative block w-44'
-              >
-                <img
-                  src='/img/vercel.svg'
-                  alt='Powered by Vercel'
-                  width='212'
-                  height='44'
-                />
-              </a>
             </div>
           </div>
 

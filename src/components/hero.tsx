@@ -1,8 +1,13 @@
 import Container from './container';
 
 import heroImg from '../assets/img/hero.png';
+import { useFeatureFlags } from '../hooks/useFeatureFlags';
 
 const Hero = () => {
+  const {
+    features: { heroImageEnabled },
+  } = useFeatureFlags();
+
   return (
     <>
       <Container className='flex flex-wrap '>
@@ -50,17 +55,18 @@ const Hero = () => {
           </div>
         </div>
         <div className='flex items-center justify-center w-full lg:w-1/2'>
-          <div className=''>
+          {heroImageEnabled ? (
             <img
               src={heroImg}
               width='616'
               height='617'
               className={'object-cover'}
               alt='Hero Illustration'
-              loading='eager'
               placeholder='blur'
             />
-          </div>
+          ) : (
+            <div className={'w-[616px] h-[617px]'} />
+          )}
         </div>
       </Container>
 
